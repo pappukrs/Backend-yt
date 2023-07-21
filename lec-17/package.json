@@ -1,0 +1,16 @@
+{
+  "name": "lec-17",
+  "version": "1.0.0",
+  "description": "- 200 OK: The request was successful, and a new resource was created.\r - 201 Created: The request was successful, and a new resource was created. This is typically used when returning the URL of the newly created resource in the response headers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,23 @@
+
+
+//modules
+//reausibility of the code 
+//debugging
+//one type of function placed one place ,if require in other module then 
+//we can export
+
+//import
+//export
+//commonjs - 2015
+export -module.exports 
+        //exports
+
+import-require
+
+
+from 2015-ES
+import
+export
+-frontend
+-react
+-angular

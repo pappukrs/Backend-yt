@@ -1,0 +1,4 @@
+## dns
+## lookup()
+## reverse()
+## resolve()

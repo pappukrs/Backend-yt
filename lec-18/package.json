@@ -1,0 +1,12 @@
+{
+  "name": "lec-18",
+  "version": "1.0.0",
+  "description": "const http=require('http');\r const fs=require('fs');\r const dns=require('dns');\r const http=require('http');\r const fs=require('fs');\r const dns=require('dns');\r const server=http.createServer((req, res) => {\r     if(req.url=='/'){\r         res.writeHead(200,{\"Content-Type\":\"text/html\"});\r         res.end(\"<h1>Welcome to the Inventory Management System.</h1>\")\r     }\r     else if(req.url==\"/writeinfile\"){\r         fs.writeFile(\"inventory.txt\",\"Items in inventory\",(err)=>{\r             if(err){\r                 res.writeHead(500);\r                 res.end(\"Server Error:\"+err)\r             }\r             else{\r                 res.writeHead(200,{'Content-Type': 'text/html'});\r                 res.end(\"<h1>Data has been written in the file</h1>\")\r             }\r         })\r     }\r     else if(req.url==\"/additems\"){\r         const arr=[\"Item1\", \"Item2\", \"Item3\", \"Item4\", \"Item5\"];\r         const data = arr.join('\\n');\r         fs.appendFile(\"inventory.txt\",'\\n'+data,(err)=>{\r             if(err){\r                 res.writeHead(500);\r               res.end(\"Server   Error:\"+err);\r             }\r             else{\r                 res.writeHead(200,{'Content-Type': 'text/html'})\r                 res.end(\"<h1>All items added to the inventory</h1>\")\r             }\r         })\r     }\r     else if(req.url=='/alldetails'){\r         fs.readFile('inventory.txt',\"utf-8\",(err,data)=>{\r             if(err){\r                 res.writeHead(500);\r                 res.end(\"Server Error:\"+err);\r             }\r             else{\r                 res.writeHead(200,{'Content-Type': 'text/plain'})\r                 res.end(data);\r             }\r         })\r     }\r     else if(req.url==\"/address\"){\r       const ipaddress=process.argv[2];",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

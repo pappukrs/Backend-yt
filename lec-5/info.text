@@ -1,0 +1,28 @@
+
+
+Module:- self-contained unit of code that 
+        encapsulates related functionality.
+        It can be a 
+        single file or a collection of files
+
+        There are 3 types of modules.
+
+    1.Local modules
+     --we write functiona and variable one time and use
+       them anywhere in same project by just importing them
+
+    2. Inbuilt module/core modules
+      --Installed during nodejs
+
+           -Global modules
+               eg:console.log(),__dirname,__filename
+
+
+            --Non Global modules
+             --os,fs,path,dns
+        
+    3.External Module/Third Party modules
+
+       NPM?---NODE PACKAGE MANAGER;
+
+       npm install packageName
